@@ -1,0 +1,254 @@
+.container_mixin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 58em;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 58em;
+}
+.menu {
+  float: right;
+}
+.logo {
+  float: left;
+  padding: 1em;
+  /* устанавливает отступы с внутренней стороны рамки */
+}
+a {
+  text-decoration: none;
+}
+.text {
+  margin-left: 5%;
+  width: 90%;
+  height: 100%;
+}
+.main_ground {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  /* устанавливает семейство шрифта */
+  background: #dae9f0;
+  width: 85%;
+  height: 100%;
+  margin-left: 7.5%;
+}
+.body_text {
+  font-size: 14pt;
+  /* определяет размер шрифта элемента */
+}
+.move {
+  background-color: rgba(119, 252, 10, 0.425);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 21%;
+  width: 58%;
+  height: 100%;
+}
+.img-1 {
+  width: 654px;
+  height: 350px;
+  border-color: rgba(119, 252, 10, 0.425);
+}
+header {
+  margin-left: 7.5%;
+  text-align: center;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  width: 85%;
+  height: 162px;
+  background-color: #41e171;
+}
+footer {
+  margin-top: 10px;
+  width: 100%;
+  height: 70px;
+  line-height: 30px;
+  /* изменение межстрочного интервала */
+}
+footer .col-three {
+  width: 33%;
+  height: 100%;
+  text-align: center;
+  /* выравнивание текста по центру */
+}
+footer dialog {
+  text-align: left;
+  width: 320px;
+  height: 300px;
+  border-radius: 10px;
+  border-color: #41e171;
+  position: fixed;
+}
+footer .open {
+  width: 125px;
+  height: 37px;
+  background-color: rgba(119, 252, 10, 0.425);
+  color: #41e171;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+footer input {
+  width: 80%;
+  height: 20px;
+  margin-top: 5px;
+}
+footer a {
+  color: dodgerblue;
+}
+footer a:hover {
+  color: #41e171;
+}
+/* Лабораторная №4 */
+.bookmark {
+  color: dodgerblue;
+}
+.added {
+  color: #FF4F00;
+}
+.bookmark-list a {
+  margin-right: 50px;
+}
+.btn-show {
+  width: 125px;
+  height: 37px;
+  background-color: #41e171;
+  color: whitesmoke;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  margin-top: 10px;
+  display: block;
+}
+.btn-show:hover {
+  color: white;
+}
+.article__text {
+  display: none;
+}
+.article__text .quotes {
+  font-weight: 100;
+  /* устанавливает насыщенность шрифта */
+  font-size: 16pt;
+}
+.article__text .back {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background: #bce3f5;
+  /* устанавливает цвет фона объекта */
+}
+.article__text .signatures {
+  font-size: 12pt;
+}
+.bookmark:hover {
+  color: #41e171;
+}
+.show {
+  display: block;
+}
+.open:hover,
+.btn-show:hover {
+  cursor: pointer;
+}
+/* ---------------- */
+/* Лабораторная №5 */
+.fixed {
+  position: fixed;
+  top: 0;
+  opacity: 0.95;
+}
+#menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 7.5%;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  width: 1133px;
+  height: 37px;
+  background-color: dodgerblue;
+}
+#menu a {
+  color: whitesmoke;
+}
+#menu a:hover {
+  color: white;
+}
+@media (max-width: 1024px) {
+  .move {
+    background-color: rgba(119, 252, 10, 0.425);
+    margin-left: 17%;
+    width: 66%;
+    height: 100%;
+  }
+  .img-1 {
+    width: 562px;
+    height: 100%;
+  }
+  .col-three {
+    margin-left: 7.5%;
+  }
+}
+@media (max-width: 768px) {
+  /* Ширину класса container делаем резиновой */
+  .container {
+    max-width: 100%;
+    display: flex;
+  }
+  .menu {
+    float: none;
+    text-align: left;
+  }
+  .move {
+    background-color: rgba(119, 252, 10, 0.425);
+    margin-left: 15%;
+    width: 70%;
+    height: 100%;
+  }
+  .img-1 {
+    width: 444px;
+    height: 100%;
+  }
+}
+@media (max-width: 480px) {
+  /* Ширину класса container делаем резиновой */
+  .container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    float: none;
+  }
+  .menu {
+    float: none;
+    text-align: left;
+  }
+  .move {
+    background-color: rgba(119, 252, 10, 0.425);
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+  }
+  .img-1 {
+    width: 390px;
+    height: 100%;
+  }
+  /* Расположение блоков в footer делаем в одну колонку */
+  .col-three {
+    float: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
